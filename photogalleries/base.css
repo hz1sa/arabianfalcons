@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding:0;
+	font-family:Verdana,Tahoma,Arial,Sans-Serif;
+	font-size:70%;
+	width: 900px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+acronym {
+    cursor: help;
+    border-bottom: 1px dotted #b45454;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.5em 0 .5em 0;
+	color: #942525;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+}
+
+h1 { text-transform: uppercase; font-size: 2.3em; }
+h2 { text-transform: uppercase; font-size: 1.9em; }
+h3 { text-transform: uppercase; font-size: 1.3em; }
+h4, h5, h6 { font-size: 1.1em; }
+
+a:link { color: #933636 }
+a:visited { color: #633 }
+a:hover { color:#c53030; }
+a:active { color: black }
+a img, a:link img { border: 0 solid #900; }
+a:visited img { border: 0 solid #633; }
+a:hover img { border: 0 solid #600; }
+a:active img { border: 0 solid #cfcfcf; }
+a img.border, a:link img.border, a:visited img.border, a:hover img.border { border-width: 1px; }
+img.border {
+	border:1px solid #999;
+	padding:3px;
+}
+p, ul, ol, dl, table {
+	margin: 0 0 1em 0;
+}
+
+/* This is so IE/Windows shows the bullets on ULs */
+ul, ol {
+	margin: 0 0 1em 2em;
+	padding: 0;
+}
+
+address {
+	display: block;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+dt { font-weight: bold; margin-top: 1em; }
+dd { margin: 0 0 0 2em; }
+
+fieldset { border: 1px solid #666; }
+
+/* Text size */
+.big { font-size: 150%; }
+.bigger { font-size: 200%; }
+
+
+/* <span class="strikeout"><span>this text is black with a red line through it</span></span> */
+span.strikeout {
+    text-decoration: line-through;
+    color: red;
+}
+
+span.strikeout span {
+    color: black;
+}
+
+/* http://paularmstrongdesigns.com/weblog/text/10/stop-superscripts-from-breaking-line-heights-once-and-for-all */
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+sub { top: 0.4em; }
